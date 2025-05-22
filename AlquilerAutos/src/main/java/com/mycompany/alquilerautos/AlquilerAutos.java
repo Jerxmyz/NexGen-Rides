@@ -1,10 +1,15 @@
 package com.mycompany.alquilerautos;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class AlquilerAutos {
 
     public static void main(String[] args) {
-        Cliente cliente = new Cliente("", 0, "", "");
-        cliente.pedirDatos();
-        cliente.mostrarDatos();
+        Menu sistema = new Menu();
+        sistema.mostrarMenu();
     }
 }
+        

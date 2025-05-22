@@ -1,4 +1,5 @@
 package com.mycompany.alquilerautos;
+
 import java.util.Scanner;
 public class Cliente {
     private String nombre;
@@ -62,9 +63,13 @@ public class Cliente {
     }
     
     public void mostrarDatos(){
+        System.out.println("=============================");
+        System.out.println("Datos ingresados: ");
         System.out.println("Nombres: "+ getNombre());
         System.out.println("Cedula: "+ getCedula());
         System.out.println("Correo: "+ getCorreo());
         System.out.println("Direccion: "+ getDireccion());
+        System.out.println("=============================");
     }
+    
 }
