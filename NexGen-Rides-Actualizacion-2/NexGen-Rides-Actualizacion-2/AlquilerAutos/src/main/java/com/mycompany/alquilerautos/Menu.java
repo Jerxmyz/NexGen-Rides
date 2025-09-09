@@ -17,14 +17,14 @@ public class Menu {
     public void mostrarMenu() {
         int opcion;
         do {
-            System.out.println("\n=== SISTEMA DE ALQUILER DE AUTOS ===");
-            System.out.println("1. Registrar Alquiler");
+            System.out.println("\n====== NexGen - Rides System =======");
+            System.out.println("1. Registrar Datos De Alquiler");
             System.out.println("2. Mostrar todos los clientes");
             System.out.println("3. Buscar cliente por cédula");
             System.out.println("4. Editar cliente");
             System.out.println("5. Modo Administrador");
             System.out.println("6. Guardar y salir");
-            System.out.print("Seleccion: ");
+            System.out.print("Seleccione uno: ");
 
             try {
                 opcion = scanner.nextInt();
@@ -113,7 +113,7 @@ public class Menu {
     }
 
     private void buscarCliente() {
-        System.out.print("Ingrese la cédula: ");
+        System.out.print("Ingrese la cedula: ");
         try {
             int cedula = scanner.nextInt();
             scanner.nextLine();
@@ -125,13 +125,13 @@ public class Menu {
                             () -> System.out.println("Cliente no encontrado.")
                     );
         } catch (InputMismatchException e) {
-            System.out.println("Cédula inválida.");
+            System.out.println("Cedula inválida.");
             scanner.nextLine();
         }
     }
 
     private void editarCliente() {
-        System.out.print("Cédula del cliente a editar: ");
+        System.out.print("Cedula del cliente a editar: ");
         try {
             int cedula = scanner.nextInt();
             scanner.nextLine();
